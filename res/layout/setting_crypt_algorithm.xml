@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView android:id="@+id/setting_crypt_note1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" 
+	    android:layout_marginLeft="20dip"
+	    android:textSize="18sp"
+        android:text="@string/crypt_method" />
+    
+    <TextView android:id="@+id/setting_crypt_note2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" 
+	    android:layout_marginLeft="20dip"
+	    android:textSize="14sp"
+	    android:textColor="#606060"
+        android:text="@string/crypt_note" 
+        android:layout_below="@+id/setting_crypt_note1"/>
+    
+    <RadioGroup android:id="@+id/setting_crypt_radiogroup"
+        android:orientation="vertical"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" 
+	    android:layout_marginLeft="40dip"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/setting_crypt_note2">
+        
+        <RadioButton 
+            android:id="@+id/setting_crypt_aes" 
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:text="@string/crypt_aes"
+            android:checked="true"/>
+        
+        <RadioButton 
+            android:id="@+id/setting_crypt_des" 
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:text="@string/crypt_des"/>
+    </RadioGroup>
+    
+</RelativeLayout>

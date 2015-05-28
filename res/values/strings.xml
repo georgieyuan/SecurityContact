@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云隐仙踪</string>
+    
+    <string name="desc_main">云隐仙踪相关设置</string>
+    <string name="desc_crypt">设置加解密算法</string>
+    <string name="desc_new_password">设置加解密密钥</string>
+    <string name="desc_change_password">修改加解密密钥</string>
+    <string name="desc_whitelist">设置白名单</string>
+    
+    <string name="crypt_method">当前加解密算法</string>
+    <string name="crypt_note">修改加解密算法，退出后默认保存</string>
+    <string name="crypt_aes">AES算法</string>
+    <string name="crypt_des">DES算法</string>
+    
+    <string name="password_old">请输入旧密钥</string>
+    <string name="password_new1">请输入新密钥</string>
+    <string name="password_new2">请再次输入新密钥</string>
+    <string name="password_ok">保存密钥</string>
+    
+    <string name="action_settings">test_config</string>
+
+</resources>

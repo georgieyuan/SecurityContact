@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content" >
+      
+    <ImageView  
+        android:id="@+id/whitelist_icon"  
+        android:layout_width="48dp"  
+        android:layout_height="48dp"  
+        android:layout_marginLeft="8dip"  
+        android:layout_marginTop="8dip" 
+        android:layout_marginBottom="8dip" 
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+    />   
+
+	<TextView  
+	    android:id="@+id/whitelist_app_name"  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content" 
+	    android:layout_toRightOf="@+id/whitelist_icon"
+	    android:layout_marginTop="8dip" 
+	    android:layout_marginLeft="8dip"
+	/>  
+	
+	<TextView  
+	    android:id="@+id/whitelist_package_name"  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content" 
+	    android:layout_toRightOf="@+id/whitelist_icon"
+	    android:layout_below="@+id/whitelist_app_name" 
+	    android:layout_marginBottom="8dip" 
+	    android:layout_marginLeft="8dip"
+	/>  
+	 
+	<CheckBox  
+        android:id="@+id/whitelist_is_white" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"  
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    /> 
+ </RelativeLayout>  
